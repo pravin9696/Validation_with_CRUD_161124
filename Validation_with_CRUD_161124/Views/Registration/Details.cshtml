@@ -1,0 +1,19 @@
+﻿@model Validation_with_CRUD_161124.Models.tblRegistration
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+
+    @Html.LabelFor(x => x.FirstName) : @Html.DisplayTextFor(x => x.FirstName)
+    <br />
+    @Html.LabelFor(x => x.LastName) : @Html.DisplayFor(x => x.LastName)
+    <br />
+    @Html.LabelFor(x => x.Email) : @Html.DisplayTextFor(x => x.Email)
+    <br />
+    @Html.LabelFor(x => x.Password) : @Html.DisplayTextFor(x => x.Password)
+    <br />
+    @Html.ActionLink("Index page","index","Registration")
+
